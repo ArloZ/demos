@@ -13,3 +13,4 @@ endif()
 
 add_executable( alg-sort alg-sort.cpp )
 add_executable( basecpp basecpp.cpp )
+add_executable( farey-list farey-list.cpp )
