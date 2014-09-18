@@ -94,6 +94,30 @@ public:
             }
         }
     }
+    /*
+     * select sorting(increase)
+     */
+    void select_sorting(){
+        if(is_empty()){
+            cout<<"Array is empty!"<<endl;
+            return;
+        }
+        int least = 0;
+        int tmp = 0;
+        for(int i = 0; i < _size; i++){
+            least = i;
+            for(int j = i; j < _size; j++){
+                if(_array[least] > _array[j]){
+                    least = j;
+                }
+            }
+            tmp = _array[i];
+            _array[i] = _array[least];
+            _array[least] = tmp;
+        }
+
+    }
+
 };
 
 
@@ -109,6 +133,15 @@ int main(){
     cout<<"-- before sort:"<<endl;
     sort.print();
     sort.insert_sorting();
+    cout<<"-- After sort:"<<endl;
+    sort.print();
+
+    // test select sorting
+    sort.clear();
+    sort.fill(n);
+    cout<<"-- before sort:"<<endl;
+    sort.print();
+    sort.select_sorting();
     cout<<"-- After sort:"<<endl;
     sort.print();
 
