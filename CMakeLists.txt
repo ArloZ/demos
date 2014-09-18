@@ -14,3 +14,16 @@ endif()
 add_executable( alg-sort alg-sort.cpp )
 add_executable( basecpp basecpp.cpp )
 add_executable( farey-list farey-list.cpp )
+
+# Interview Bible for coder
+add_executable( linklist ./interviewbible/linklist.cpp )
+add_executable( dualinklist ./interviewbible/dualinklist.cpp )
+add_executable( queue ./interviewbible/queue.cpp )
+add_executable( stack ./interviewbible/stack.cpp )
+add_executable( tree ./interviewbible/tree.cpp )
+add_executable( graph ./interviewbible/graph.cpp )
+
+
+# Art code
+add_executable( test ./artofcode/test.cpp )
+
