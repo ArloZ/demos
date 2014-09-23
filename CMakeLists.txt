@@ -22,6 +22,7 @@ add_executable( queue ./interviewbible/queue.cpp )
 add_executable( stack ./interviewbible/stack.cpp )
 add_executable( tree ./interviewbible/tree.cpp )
 add_executable( graph ./interviewbible/graph.cpp )
+add_executable( strings ./interviewbible/strings.cpp )
 
 
 # Art code
